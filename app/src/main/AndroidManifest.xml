@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.brightplate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Brightplate">
+        <activity
+            android:name=".controllers.SavedChosenRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.BrightPlateSplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.ActivityMainHomePage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.RecipeListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".controllers.SavedRecipeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".main.ChosenRecipe"
+            android:exported="true" />
+        <activity
+            android:name=".controllers.InventoryViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".controllers.InventoryEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".controllers.InventoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".main.AllRecipeListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".main.UserSignup"
+            android:exported="true" />
+        <activity
+            android:name=".main.UserSignin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
